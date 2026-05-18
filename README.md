@@ -7,7 +7,7 @@
 <div align="center">
 <b><a href="https://silin159.github.io/SilinGao/" target="_blank">Silin Gao</a><sup>1*</sup>, <a href="https://marcelluszhao.github.io/" target="_blank">Hao Zhao</a><sup>1*</sup>, <a href="https://eric11eca.github.io/" target="_blank">Zeming Chen</a><sup>1</sup>, <a href="https://smamooler.github.io/" target="_blank">Sepideh Mamooler</a><sup>1</sup>, <a href="https://www.languagesciences.cam.ac.uk/staff/antara-raaghavi-bhattacharya" target="_blank">Antara Raaghavi Bhattacharya</a><sup>1,2</sup>, <a href="https://qiyuw.github.io/" target="_blank">Qiyu Wu</a><sup>3</sup>, <a href="https://www.linkedin.com/in/hiromi-wakaki-570067286/?originalSubdomain=jp" target="_blank">Hiromi Wakaki</a><sup>3</sup>, <a href="https://www.yukimitsufuji.com/" target="_blank">Yuki Mitsufuji</a><sup>3</sup>, <a href="https://limirs.github.io/" target="_blank">Li Mi</a><sup>1,4</sup>, <a href="https://smontariol.github.io/" target="_blank">Syrielle Montariol</a><sup>1</sup>, <a href="https://atcbosselut.github.io/" target="_blank">Antoine Bosselut</a><sup>1</sup></b>
 
-<sup>1</sup>EPFL &nbsp; <sup>2</sup>Harvard University &nbsp; <sup>3</sup>Sony &nbsp; <sup>4</sup>ETH Zurich
+<sup>*</sup>Equal Contribution &nbsp; <sup>1</sup>EPFL &nbsp; <sup>2</sup>Harvard University &nbsp; <sup>3</sup>Sony &nbsp; <sup>4</sup>ETH Zurich
 
 [![ArXiv](https://img.shields.io/badge/arXiv-2503.20871-B31B1B.svg?logo=arxiv&logoColor=white)]()
 </div>
