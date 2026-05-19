@@ -1,0 +1,43 @@
+
+# packages more strictly installed in Dockerfile
+# torch==2.7.0
+# triton==3.3.0
+# torchvision==0.22.0
+# xformers==0.0.30
+# flashinfer==0.2.7.post1
+# vllm==0.9.2
+# opencv-contrib-python
+# flash-attn==2.7.4.post1
+
+accelerate<1
+bitsandbytes==0.42.0
+deepspeed>=0.13.5
+einops
+einops-exts
+huggingface_hub
+imageio
+numpy
+orjson
+peft==0.10.0
+pycocoevalcap
+pyyaml
+scikit-learn>=1.2.2
+scipy
+sentencepiece
+shortuuid
+tensorboardX
+termcolor
+timm==0.9.12
+tokenizers
+tqdm
+transformers<4.54.0
+yacs
+openai
+google-genai
+pandas
+pillow
+wandb
+huggingface_hub[cli]
+ffmpeg-python
+pyarrow
+datasets
