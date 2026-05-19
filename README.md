@@ -15,3 +15,11 @@
 ## Abstract
 
 Multimodal LLMs lack a systematic understanding of visual dynamics in complex human world activities, which requires the model to predict or simulate multiple levels of dynamic constituents, such as the general progression of actions and the associated changes of low-level details in the world. To address this challenge, we propose a dynamic visual schema-guided world model, <b>DynaVieW</b>, optimized for visual dynamic prediction and simulation. DynaVieW achieves an in-depth understanding of visual dynamics by learning <b>interleaved state-transition</b> sequences, where states cover broad visual scenes from video keyframes, and transitions capture comprehensive dynamic constituents within a <b>hierarchical schema</b>. DynaVieW jointly models transition prediction and state simulation under a mixture-of-experts architecture, with a <b>cross-expert selective attention</b> and a <b>schema token re-weighted loss</b>, to ensure effective and robust learning. DynaVieW's superior visual dynamic understanding boosts its downstream performances on both visual narrative creation and world simulation, showing improved consistency and controllability of visual generation and better instruction-following ability.
+
+## Overview of DynaVieW
+
+<div align="center">
+<img src="figs/DynaVieW_Overview.png" width="100%" alt="overview"/>
+</div>
+
+We elevate the world modeling capabilities of interleaved vision-text LLMs via continued pre-training on more systematic human world visual dynamics. Our proposed <b>Dyna</b>mic-<b>Vi</b>sion-ori<b>e</b>nted <b>W</b>orld model (<b>DynaVieW</b>) is pre-trained on interleaved state-transition sequences across broad domains. Specifically, DynaVieW learns to simulate <b>visual state sequences</b> that are sourced from <b>keyframes</b> of diverse real-world videos, covering various human daily activities, robotic manipulations, art works and auto-driving recordings, etc. Meanwhile, DynaVieW learns to predict <b>transitions</b> between visual states, which are texts framed in a <b>hierarchical JSON schema</b>, to comprehensively capture both high-level progression of activities and low-level changes of visual details in a structured manner.
