@@ -28,6 +28,40 @@ Our proposed <b>Dyna</b>mic-<b>Vi</b>sion-ori<b>e</b>nted <b>W</b>orld model (<b
 
 Specifically, DynaVieW learns to simulate <b>visual state sequences</b> that are sourced from <b>keyframes</b> of diverse real-world videos, covering various human daily activities, robotic manipulations, art works and auto-driving recordings, etc. Meanwhile, DynaVieW learns to predict <b>transitions</b> between visual states, which are texts framed in a <b>hierarchical JSON schema</b>, to comprehensively capture both high-level progression of activities and low-level changes of visual details in a structured manner.
 
+## Setting Up Environment
+
+#### Docker
+Please refer to `Dockerfile` (along with `requirements.txt`) for building the environment (Docker image) from scratch.
+At the top of the `Dockerfile`, remember to choose the correct processor architecture that fits your platform:
+```
+# for arm64 or aarch64 processor architecture
+FROM --platform=linux/arm64 nvidia/cuda:12.4.0-devel-ubuntu22.04
+
+# for amd64 or x86_64 processor architecture
+FROM --platform=linux/amd64 nvidia/cuda:12.4.0-devel-ubuntu22.04
+```
+
+#### Pip
+To build the environment packages on an existing OS with pip:
+```
+# Python Version: 3.10, CUDA Version: 12
+pip install --upgrade pip setuptools packaging wheel ninja pybind11
+pip install torch==2.7.0 triton==3.3.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+pip install -v --no-cache-dir --no-build-isolation -U git+https://github.com/facebookresearch/xformers.git@v0.0.30
+pip install -v --no-cache-dir --no-build-isolation -U git+https://github.com/flashinfer-ai/flashinfer.git@v0.2.7.post1
+
+git clone https://github.com/vllm-project/vllm.git vllm_source
+cd vllm_source
+git checkout v0.9.2
+pip install -v --no-cache-dir --no-build-isolation -r requirements/build.txt
+pip install -v --no-cache-dir --no-build-isolation -e .
+cd ..
+
+pip install -r requirements.txt
+pip install --no-binary opencv-contrib-python --no-deps opencv-contrib-python
+pip install flash-attn==2.7.4.post1 --no-build-isolation
+```
+
 ## DynaVieW State-Transition Data Construction
 
 Please refer to `data/README.md` for the construction of DynaVieW's pre-training data.
