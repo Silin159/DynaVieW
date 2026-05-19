@@ -19,7 +19,7 @@ Multimodal LLMs lack a systematic understanding of visual dynamics in complex hu
 ## Overview of DynaVieW
 
 <div align="center">
-<img src="figs/DynaVieW_Overview.png" width="60%" alt="overview"/>
+<img src="figs/DynaVieW_Overview.png" width="70%" alt="overview"/>
 </div>
 
 We elevate the world modeling capabilities of interleaved vision-text LLMs via continued pre-training on more systematic human world visual dynamics.
