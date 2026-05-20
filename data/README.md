@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-<img src="figs/DynaVieW_Data.png" width="70%" alt="data"/>
+<img src="../figs/DynaVieW_Data.png" width="70%" alt="data"/>
 </div>
 
 ## Download the Constructed Data
@@ -34,7 +34,7 @@ python clip_extract_keyframe.py
 An illustration of our framed hierarchical transition schema in JSON:
 
 <div align="center">
-<img src="figs/DynaVieW_Example.png" width="100%" alt="sample"/>
+<img src="../figs/DynaVieW_Example.png" width="100%" alt="sample"/>
 </div>
 
 Download [InternVL3-78B-Instruct](https://huggingface.co/OpenGVLab/InternVL3-78B-Instruct) model for transition annotation between extracted states (keyframes).
