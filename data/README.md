@@ -10,7 +10,11 @@
 
 ## Download the Constructed Data
 
-Our constructed state-transition data for DynaVieW pre-training can be downloaded from this [HuggingFace repository](https://huggingface.co/datasets/Silin1590/DynaVieW-Pretrain-Data-10K-Videos/tree/main). Please unzip `Ego4D.zip`, `AgiBotWorld.zip`, `ShareGPT4Video.zip` to get the extracted states (keyframes) and annotated transitions sourced from three different video datasets.
+Our constructed state-transition data for DynaVieW pre-training can be downloaded from this [HuggingFace repository](https://huggingface.co/datasets/Silin1590/DynaVieW-Pretrain-Data-10K-Videos/tree/main).
+
+Please unzip `Ego4D.zip`, `AgiBotWorld.zip`, `ShareGPT4Video.zip` to get the extracted states (keyframes) and annotated transitions sourced from three different video datasets.
+
+Please also unzip `bagel_example.zip` to get the 3000 public samples of [BAGEL](https://github.com/ByteDance-Seed/Bagel)'s pre-training data, to be mixed with our state-transition pre-training data.
 
 ## State (Video Keyframe) Extraction
 
