@@ -66,7 +66,7 @@ pip install flash-attn==2.7.4.post1 --no-build-isolation
 
 Please refer to `data/README.md` for the construction of DynaVieW's pre-training data.
 
-## DynaVieW Modeling and Pre-training
+## DynaVieW Modeling and Training
 
 Please refer to `modeling/README.md` for the pre-training of DynaVieW on visual state simulation and transition prediction.
 
