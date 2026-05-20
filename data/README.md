@@ -29,7 +29,7 @@ Download [CLIP-ViT-Large](https://huggingface.co/openai/clip-vit-large-patch14-3
 
 Then run the keyframe extraction script:
 ```
-# write your path to the source videos and path to save the output keyframes
+# please specify customized directories before running
 python clip_extract_keyframe.py
 ```
 
@@ -45,6 +45,6 @@ Download [InternVL3-78B-Instruct](https://huggingface.co/OpenGVLab/InternVL3-78B
 
 Then run the transition annotation script, using [vllm](https://github.com/vllm-project/vllm) and constrained decoding based on the schema specified in `prompts_schema.py`:
 ```
-# write your path to the saved extracted keyframes and path to the downloaded internvl model
+# please specify customized directories before running
 python internvl_annotate_transition.py
 ```
