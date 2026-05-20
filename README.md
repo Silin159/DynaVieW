@@ -68,7 +68,7 @@ Please refer to `data/README.md` for the construction of DynaVieW's pre-training
 
 ## DynaVieW Modeling and Training
 
-Please refer to `modeling/README.md` for the pre-training of DynaVieW on visual state simulation and transition prediction.
+Please refer to `modeling/README.md` for the pre-training of DynaVieW and fine-tuning on downstream tasks.
 
 ## DynaVieW Inference and Evaluation
 
