@@ -49,8 +49,6 @@ def main():
     parser.add_argument("--model_name", type=str, help="the name of the model to run")
     parser.add_argument("--dataset_name", type=str, help="the name of the dataset to run")
     parser.add_argument("--checkpoint", type=str, help="name of the checkpoint to run")
-    parser.add_argument("--n_slices", type=int, required=True, help="split the dict dataset into several pieces")
-    parser.add_argument("--slice_id", type=int, required=True, help="the piece to run experiment")
     args = parser.parse_args()
 
     # replace <...> with your root path
@@ -177,9 +175,7 @@ def main():
     with open(f".../lego/{args.dataset_name}_val.json", "r") as f:
         annotations = json.load(f)
 
-    sub_annotations = split_dict(annotations, n_slices=args.n_slices)[args.slice_id]
-    
-    for clip_id, clip_id_sample in tqdm(sub_annotations.items()):
+    for clip_id, clip_id_sample in tqdm(annotations.items()):
         width = metadata[clip_id]["width"]
         height = metadata[clip_id]["height"]
         inference_hyper=dict(

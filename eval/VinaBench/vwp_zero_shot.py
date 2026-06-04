@@ -37,9 +37,7 @@ def main():
     parser.add_argument("--exp_name", type=str, help="the name of the experiment to run")
     parser.add_argument("--model_name", type=str, help="the name of the model to run")
     parser.add_argument("--dataset_name", type=str, help="the name of the dataset to run")
-    parser.add_argument("--checkpoint_name", type=str, help="checkpoint name")
-    parser.add_argument("--start_index", type=int, default=0, help="the start index of the dataset to run")
-    parser.add_argument("--end_index", type=int, default=100, help="the end index of the dataset to run")
+    parser.add_argument("--checkpoint", type=str, help="checkpoint name")
     args = parser.parse_args()
 
     # replace <...> with your root path
@@ -51,7 +49,7 @@ def main():
     pt_model_root = "..."  # path for loading the pre-trained vision world model checkpoints
     model_name = args.model_name
     context_window = 6
-    checkpoint = args.checkpoint_name
+    checkpoint = args.checkpoint
     model_path = os.path.join(os.path.join(pt_model_root, model_name), checkpoint)
 
     llm_config = Qwen2Config.from_json_file(os.path.join(config_path, "llm_config.json"))
@@ -179,7 +177,7 @@ def main():
         for line in f:
             annotations.append(json.loads(line))
 
-    for sample in tqdm(annotations[args.start_index:min(len(annotations), args.end_index)]):
+    for sample in tqdm(annotations):
         video_id = sample["scene_full_id"]
         story_id = str(sample["story_id"])
         output_dir = os.path.join(output_root, dataset_name, video_id, story_id, args.exp_name)

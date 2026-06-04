@@ -38,7 +38,6 @@ def main():
     parser.add_argument("--exp_name", type=str, help="the name of the experiment to run")
     parser.add_argument("--model_name", type=str, help="the name of the model to run")
     parser.add_argument("--dataset_name", type=str, help="the name of the dataset to run")
-    parser.add_argument("--num-examples", type=int, default=1, help="number of examples to evaluate")
     parser.add_argument("--checkpoint", type=str, help="name of the checkpoint to run")
     args = parser.parse_args()
 
@@ -179,7 +178,7 @@ def main():
         for line in f:
             annotations.append(json.loads(line))
 
-    for sample in tqdm(annotations[:args.num_examples]):
+    for sample in tqdm(annotations):
         video_id = sample["scene_full_id"]
         story_id = str(sample["story_id"])
         output_dir = os.path.join(output_root, dataset_name, video_id, story_id, args.exp_name)
