@@ -72,4 +72,4 @@ Please refer to `modeling/README.md` for the pre-training of DynaVieW and fine-t
 
 ## DynaVieW Inference and Evaluation
 
-[TO DO]
+Please refer to `eval/README.md` for the evaluation of DynaVieW on downstream tasks.
