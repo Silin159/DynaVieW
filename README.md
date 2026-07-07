@@ -9,7 +9,7 @@
 
 <sup>*</sup>Equal Contribution &nbsp; <sup>1</sup>EPFL &nbsp; <sup>2</sup>Harvard University &nbsp; <sup>3</sup>Sony &nbsp; <sup>4</sup>ETH Zurich
 
-[![ArXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-B31B1B.svg?logo=arxiv&logoColor=white)](https://github.com/Silin159/DynaVieW/blob/main/DynaVieW_Camera_Ready.pdf)
+[![ArXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-B31B1B.svg?logo=arxiv&logoColor=white)](https://github.com/Silin159/DynaVieW/blob/main/DynaVieW.pdf)
 </div>
 
 ## Abstract
