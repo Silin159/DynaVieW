@@ -9,7 +9,7 @@
 
 <sup>*</sup>Equal Contribution &nbsp; <sup>1</sup>EPFL &nbsp; <sup>2</sup>Harvard University &nbsp; <sup>3</sup>Sony &nbsp; <sup>4</sup>ETH Zurich
 
-[![ArXiv](https://img.shields.io/badge/arXiv-xxxx.xxxxx-B31B1B.svg?logo=arxiv&logoColor=white)](https://github.com/Silin159/DynaVieW/blob/main/DynaVieW.pdf)
+[![ArXiv](https://img.shields.io/badge/arXiv-2607.04112-B31B1B.svg?logo=arxiv&logoColor=white)](http://arxiv.org/abs/2607.04112)
 </div>
 
 ## Abstract
